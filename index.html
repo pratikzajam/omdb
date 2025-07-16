@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="div">
+        <form onsubmit="getSearchData(event)">
+            <div class="search">
+                <input id="search" type="text">
+                <select name="type" id="type">
+                    <option value="Movie">Movie</option>
+                    <option value="series">series</option>
+                    <option value="episode">episode</option>
+                </select>
+                <select name="sort" id="sort" onchange="handleSort()">
+                    <option value="asc">ascending</option>
+                    <option value="desc">Descending</option>
+                </select>
+                <button>Search</button>
+            </div>
+            <div id="movieCards">
+
+            </div>
+        </form>
+    </div>
+
+
+
+</body>
+
+
+<script src="index.js"></script>
+
+</html>
